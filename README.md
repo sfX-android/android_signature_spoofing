@@ -7,7 +7,7 @@ Based on an user request I reviewed the way how the microG patch
 works and the impact of enabling signature spoofing.
 
 The review & my personal conclusion can be found here:
-Suicide-Squirrel/issues_pie#30
+https://github.com/Suicide-Squirrel/issues_pie/issues/30
 
 The implementation has been done as follows:
 
