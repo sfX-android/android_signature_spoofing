@@ -1,5 +1,7 @@
+
+project packages/apps/Settings/
 diff --git a/packages/apps/Settings/res/values/strings.xml b/packages/apps/Settings/res/values/strings.xml
-index 01ef29b..fd78667 100644
+index 01ef29b341..fd78667045 100644
 --- a/packages/apps/Settings/res/values/strings.xml
 +++ b/packages/apps/Settings/res/values/strings.xml
 @@ -10087,4 +10087,9 @@
@@ -13,7 +15,7 @@ index 01ef29b..fd78667 100644
 +    <string name="allow_signature_fake_warning">Allowing apps to bypass security systems can lead to serious security and privacy problems! Check that only benign apps use the corresponding permission when this is active.</string>
  </resources>
 diff --git a/packages/apps/Settings/res/xml/development_settings.xml b/packages/apps/Settings/res/xml/development_settings.xml
-index 8a8d2d4..abfd8cc 100644
+index 8a8d2d4def..abfd8cc637 100644
 --- a/packages/apps/Settings/res/xml/development_settings.xml
 +++ b/packages/apps/Settings/res/xml/development_settings.xml
 @@ -569,6 +569,12 @@
@@ -30,7 +32,7 @@ index 8a8d2d4..abfd8cc 100644
              android:key="kill_app_longpress_back"
              android:title="@string/kill_app_longpress_back"
 diff --git a/packages/apps/Settings/src/com/android/settings/development/DevelopmentSettingsDashboardFragment.java b/packages/apps/Settings/src/com/android/settings/development/DevelopmentSettingsDashboardFragment.java
-index f2011bc..0a6bb57 100644
+index f2011bc612..0a6bb57367 100644
 --- a/packages/apps/Settings/src/com/android/settings/development/DevelopmentSettingsDashboardFragment.java
 +++ b/packages/apps/Settings/src/com/android/settings/development/DevelopmentSettingsDashboardFragment.java
 @@ -497,6 +497,7 @@ public class DevelopmentSettingsDashboardFragment extends RestrictedDashboardFra
@@ -43,7 +45,7 @@ index f2011bc..0a6bb57 100644
  
 diff --git a/packages/apps/Settings/src/com/android/settings/development/SpoofSignaturePreferenceController.java b/packages/apps/Settings/src/com/android/settings/development/SpoofSignaturePreferenceController.java
 new file mode 100644
-index 0000000..d0e6a4c
+index 0000000000..d0e6a4c52b
 --- /dev/null
 +++ b/packages/apps/Settings/src/com/android/settings/development/SpoofSignaturePreferenceController.java
 @@ -0,0 +1,70 @@
