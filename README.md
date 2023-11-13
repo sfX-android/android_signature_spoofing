@@ -1,7 +1,14 @@
-# android_signature_spoofing
+# DEPRECATED
+
+see [EXTENDROM](https://github.com/sfX-android/android_vendor_extendrom/wiki/EXTENDROM_SIGNATURE_SPOOFING) for a current and supported implementation
+
+
+## ! outdated ! instructions
+
+### android_signature_spoofing
 patches to provide signature spoofing based on official microG patches with security adjustments.
 
-## about
+#### about
 
 Based on an user request I reviewed the way how the microG patch
 works and the impact of enabling signature spoofing.
